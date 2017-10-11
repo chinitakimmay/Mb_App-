@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fujitsu.mobile_application.LoginScreen"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="336dp"
+        android:layout_height="592dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="110dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="300dp"
+            android:maxWidth="300dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/picture_for_android" />
+        <!--app:srcCompat="@mipmap/ic_launcher"-->
+
+
+        <EditText
+            android:id="@+id/etUsername"
+            style="@style/editText_style"
+            android:hint="Username"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/editText_style"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btLogin"
+            style="@style/button_style"
+            android:elevation="0dp"
+            android:onClick="Onclick"
+            android:text="LOG IN" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/textVIew_style"
+            android:text="Forgot Your Password?" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
